@@ -26,7 +26,7 @@
       <div class="flex gap-1" class:flex-row-reverse={index % 2 == 0}>
         <div class="w-6/12" class:hidden={!row.img}>
           <img
-            src="/img/{row.img}.webp"
+            src="/img/{row.img ?? 0}.webp"
             alt={row.img}
             width="180"
             height="180"
