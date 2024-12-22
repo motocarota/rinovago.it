@@ -7,7 +7,7 @@ export const contacts = [
   {
     icon: "wa",
     title: "Whatsapp",
-    url: "wa.link/ox0r1g"
+    url: "https://wa.link/ox0r1g"
   },
   {
     icon: "phone",
