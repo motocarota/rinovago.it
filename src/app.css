@@ -10,3 +10,12 @@
   font-style: normal;
   font-size: 18px;
 }
+
+ul {
+  list-style: disc;
+  margin-left: 30px;
+}
+
+h1 {
+  margin: 20px auto;
+}

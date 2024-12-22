@@ -4,7 +4,7 @@
   import snarkdown from "snarkdown";
 </script>
 
-<div class="hero min-h-screen" style="background-color: #efefef;">
+<div class="hero min-h-screen" style="background-image: url('/img/bg.webp');">
   <div class="hero-overlay"></div>
   <div class="hero-content text-neutral-content text-center">
     <div class="max-w-md text-white">
@@ -24,8 +24,13 @@
     <div class="my-4">
       <h1 class="text-3xl">{row.title}</h1>
       <div class="flex gap-1" class:flex-row-reverse={index % 2 == 0}>
-        <div class="bg-gray-100 w-6/12" class:hidden={!row.img}>
-          {row.img}
+        <div class="w-6/12" class:hidden={!row.img}>
+          <img
+            src="/img/{row.img}.webp"
+            alt={row.img}
+            width="180"
+            height="180"
+          />
         </div>
         <div>
           {@html snarkdown(row.md)}
@@ -39,13 +44,12 @@
   id="contatti"
   class="grid lg:grid-cols-2 gap-3 p-11 mx-auto max-w-screen-lg"
 >
-  <img
-    src="/img/21.webp"
-    alt="car!"
-    class="rounded-lg"
-    style="border-radius: 16px;"
-  />
-  <div class="text-center gap-3">
+  <div>
+    <img src="/img/rino-vago.webp" alt="Rino Vago" />
+  </div>
+  <div class="text-center gap-5">
+    <h1 class="text-3xl">Entriamo in contatto</h1>
+
     <div class="my-5">
       {#each contacts as c}
         <div class="my-4">
